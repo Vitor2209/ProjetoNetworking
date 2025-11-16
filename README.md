@@ -1,135 +1,167 @@
-✅ README.md — Projeto Comunitário (Template Profissional)
+🚀 QuickPost — Rede Social Instantânea
 
-# 🌐 Projeto Comunitário — Desenvolvimento em Equipe
+Clone moderno do X (Twitter), criado pela comunidade [nome da comunidade] com foco em simplicidade, velocidade e compartilhamento rápido de ideias.
 
-Bem-vindo ao **projeto oficial da nossa comunidade de desenvolvimento**!  
-Este repositório será o ponto central para organizar ideias, planejar features  
-e construir um sistema real de forma colaborativa, aberta e inclusiva.
+O QuickPost permite que usuários publiquem mensagens curtas, sigam outras pessoas, curtam postagens e visualizem um feed personalizado — tudo com uma arquitetura moderna, escalável e open-source.
 
-Mesmo que o projeto ainda esteja em definição, este espaço já está preparado  
-para receber documentação, código, sugestões e contribuições de todos.
+📌 Visão Geral do Projeto
 
----
+O QuickPost é uma plataforma social minimalista que busca reproduzir a experiência do X/Twitter com algumas melhorias, oferecendo:
 
-## 🎯 Nossa Missão
+📝 Postagens rápidas (texto curto)
 
-Criar um projeto open-source moderno, feito por desenvolvedores da comunidade,  
-que sirva como:
+🧑‍🤝‍🧑 Sistema de seguidores (follow/unfollow)
 
-- Ambiente de estudo
-- Local para praticar habilidades reais
-- Portfólio coletivo
-- Experiência de trabalho em equipe
-- Construção de algo útil e que gere impacto
+❤️ Curtidas em posts
 
-A visão é evoluir esse repositório continuamente conforme novas ideias surgem.
+📰 Feed personalizado com conteúdo dos usuários seguidos
 
----
+🔐 Autenticação JWT (register/login)
 
-## 🚀 Tecnologias (planejadas)
+🎨 Design leve e responsivo com Tailwind CSS
 
-Essas tecnologias podem mudar conforme o projeto evoluir:
+⚡ API REST moderna com Java + Spring Boot
 
-- **Frontend:** React, Tailwind CSS  
-- **Backend:** Python (FastAPI / Flask / Django)  
-- **Banco de Dados:** PostgreSQL / MySQL / SQLite  
-- **Mobile:** React Native (possível expansão)  
-- **Infra:** Docker, CI/CD com GitHub Actions  
-- **Gerenciamento:** Notion / Discord / GitHub Projects  
+🐘 Banco de dados PostgreSQL
 
----
+🐳 Suporte completo a Docker / Docker Compose
 
-## 🧠 Ideias Iniciais (em discussão)
+O objetivo é criar uma base sólida e 100% open-source para estudo, expansão comunitária e aplicação real.
 
-- Dashboard de finanças  
-- Sistema de controle de tarefas  
-- App para organização de estudos  
-- Plataforma de posts e conteúdo  
-- Sistema de relatórios e análises  
-- API aberta para projetos futuros  
-- Ferramentas voltadas para o desenvolvedor iniciante
+🧪 Status do Projeto
 
-> **Nada aqui é definitivo — estamos moldando o projeto juntos.**
+🚧 Em desenvolvimento ativo pela comunidade
+Este repositório reúne a base inicial do frontend e backend, que estão sendo evoluídos aos poucos.
 
----
+Qualquer pessoa pode contribuir!
 
-## 📌 Como Participar
+🛠️ Tecnologias Utilizadas
+Frontend
 
-1. Entre no nosso grupo da comunidade  
-2. Participe das discussões de planejamento  
-3. Sugira ideias na aba *Issues*  
-4. Contribua com código, documentação ou design  
-5. Abra Pull Requests com melhorias
+React (Create React App)
 
-> Todos são bem-vindos — iniciantes e experientes.
+Tailwind CSS
 
----
+JavaScript/HTML/CSS
 
-## 📅 Roadmap Inicial
+Backend
 
-- [ ] Definir o objetivo principal do projeto  
-- [ ] Escolher stack de tecnologias  
-- [ ] Criar o design base (Figma)  
-- [ ] Criar arquitetura do backend  
-- [ ] Criar layout inicial do frontend  
-- [ ] Definir rotas da API  
-- [ ] Estabelecer padrões de código  
-- [ ] Criar versão MVP  
-- [ ] Criar documentação completa  
-- [ ] Lançar o primeiro release  
+Java 17
 
----
+Spring Boot 3
 
-## 📂 Estrutura do Repositório (planejada)
+Spring Security + JWT
+
+Spring Data JPA
+
+PostgreSQL
+
+Maven
+
+Docker / Docker Compose
+
+📁 Estrutura do Repositório
+/frontend
+    React + Tailwind + integração com API
+
+/backend
+    Java + Spring Boot + JWT + PostgreSQL
+
+/docs
+    documentação, diagramas, anotações da comunidade
+
+🚀 Como Rodar o Projeto Localmente
+🔧 1. Clonar o repositório
+git clone https://github.com/SEU_USUARIO/QuickPost.git
+cd QuickPost
+
+🖥️ Rodando o Frontend (React + Tailwind)
+cd frontend
+npm install
+npm start
 
 
+Acesse:
+👉 http://localhost:3000
 
-project/
-├── frontend/
-│ └── (React + Tailwind CSS)
-├── backend/
-│ └── (API em Java)
-├── mobile/
-│ └── (React Native)
-├── docs/
-│ └── Documentação geral
-└── README.md
+🛡️ Rodando o Backend (Java + Spring Boot)
+Via Maven
+cd backend
+mvn spring-boot:run
 
 
----
+A API sobe em:
+👉 http://localhost:8000
 
-## 🤝 Como Contribuir
-
-```bash
-git checkout -b feature/nova-ideia
-git commit -m "feat: adiciona nova funcionalidade"
-git push origin feature/nova-ideia
+Via Docker (recomendado)
+docker-compose up --build
 
 
-Depois abra um Pull Request explicando sua contribuição.
+Isso inicia:
 
-👥 Comunidade
+PostgreSQL
 
-Este projeto é mantido pela nossa comunidade de desenvolvedores.
-Acreditamos em:
+Backend Java
 
-Colaboração
+Persistência automática no volume pgdata
 
-Ajudar iniciantes
+🔌 Principais Endpoints da API
+Autenticação
+POST /api/auth/register
+POST /api/auth/login
 
-Troca de conhecimento
+Posts
+POST /api/posts
+GET  /api/posts/user/{username}
 
-Crescimento conjunto
+Feed
+GET /api/feed
 
-Se você quer aprender, ensinar ou contribuir — este projeto é para você.
+Follow
+POST /api/users/{username}/follow
+POST /api/users/{username}/unfollow
+
+
+Swagger UI (documentação automática):
+👉 http://localhost:8000/swagger-ui.html
+
+🤝 Como Contribuir
+
+O QuickPost é feito pela comunidade e para a comunidade.
+Toda contribuição é bem-vinda — desde código até design, ideias, documentação ou testes.
+
+Passos para contribuir:
+
+Faça um fork do repositório
+
+Crie uma branch de funcionalidade
+
+Commit e push
+
+Abra um Pull Request explicando sua contribuição
+
+📌 Melhorias Planejadas (Roadmap)
+
+🔥 Upload de imagens e suporte a mídia
+
+💬 Comentários em posts
+
+🔔 Sistema de notificações
+
+🎨 Novo layout inspirado no X 2025
+
+🌓 Tema dark/light
+
+📱 App mobile (React Native)
+
+🌎 Deploy em produção (Railway/Vercel/Render)
+
+💬 Comunidade
+
+Este projeto nasceu dentro da comunidade [nome da comunidade], com o objetivo de ensinar, aprender e construir algo grande juntos.
+
+Participe, contribua e deixe sua marca no QuickPost! 🚀
 
 📄 Licença
 
-Este projeto será distribuído sob a licença:
-
-MIT License (livre para uso e modificação)
-
-🌟 Agradecimento
-
-Obrigado por fazer parte deste início.
-Este repositório ainda é apenas uma semente — e você faz parte do crescimento dele.
+MIT — Livre para estudar, modificar e usar em seus próprios projetos.

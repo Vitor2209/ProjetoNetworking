@@ -1,7 +1,5 @@
 ✅ README.md — Projeto Comunitário (Template Profissional)
 
-Pronto para copiar e colar no GitHub
-
 # 🌐 Projeto Comunitário — Desenvolvimento em Equipe
 
 Bem-vindo ao **projeto oficial da nossa comunidade de desenvolvimento**!  
